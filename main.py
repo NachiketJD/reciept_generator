@@ -35,3 +35,5 @@ style = TableStyle(
         ( "BACKGROUND" , ( 0 , 1 ) , ( -1 , -1 ), colors.beige ),
     ] 
 ) 
+
+table = Table( DATA , style = style ) 
