@@ -18,3 +18,5 @@ DATA = [
 ] 
 
 pdf = SimpleDocTemplate( "receipt.pdf" , pagesize = A4 ) 
+styles = getSampleStyleSheet() 
+title_style = styles[ "Heading1" ]
