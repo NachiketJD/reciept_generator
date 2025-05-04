@@ -16,3 +16,5 @@ DATA = [
     [ "Discount", "", "", "-3,000.00/-"], 
     [ "Total", "", "", "17,998.00/-"], 
 ] 
+
+pdf = SimpleDocTemplate( "receipt.pdf" , pagesize = A4 ) 
