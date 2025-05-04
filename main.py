@@ -22,3 +22,5 @@ styles = getSampleStyleSheet()
 title_style = styles[ "Heading1" ]
 
 title_style.alignment = 1
+
+title = Paragraph( "GeeksforGeeks" , title_style ) 
