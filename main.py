@@ -2,3 +2,17 @@ from reportlab.platypus import SimpleDocTemplate, Table, Paragraph, TableStyle
 from reportlab.lib.pagesizes import A4 
 from reportlab.lib import colors 
 from reportlab.lib.styles import getSampleStyleSheet
+
+DATA = [ 
+    [ "Date" , "Name", "Subscription", "Price (Rs.)" ], 
+    [ 
+        "16/11/2020", 
+        "Full Stack Development with React & Node JS - Live", 
+        "Lifetime", 
+        "10,999.00/-", 
+    ], 
+    [ "16/11/2020", "Geeks Classes: Live Session", "6 months", "9,999.00/-"], 
+    [ "Sub Total", "", "", "20,9998.00/-"], 
+    [ "Discount", "", "", "-3,000.00/-"], 
+    [ "Total", "", "", "17,998.00/-"], 
+] 
