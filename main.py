@@ -37,3 +37,5 @@ style = TableStyle(
 ) 
 
 table = Table( DATA , style = style ) 
+
+pdf.build([ title , table ]) 
