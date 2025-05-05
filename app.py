@@ -20,3 +20,8 @@ def generate_pdf():
     total = request.form.get("total")
 
 data = [["Date", "Name", "Subscription", "Price (Rs.)"]]
+
+for item in items:
+        fields = item.split(",")
+        if len(fields) == 4:
+            data.append(fields)
