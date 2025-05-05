@@ -6,3 +6,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 import tempfile
 
 app = Flask(__name__)
+
+@app.route('/')
+def form():
+    return render_template('form.html')
