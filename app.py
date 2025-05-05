@@ -10,3 +10,11 @@ app = Flask(__name__)
 @app.route('/')
 def form():
     return render_template('form.html')
+
+@app.route('/generate', methods=['POST'])
+def generate_pdf():
+    title = request.form.get("title")
+    items = request.form.getlist("item[]")
+    subtotal = request.form.get("subtotal")
+    discount = request.form.get("discount")
+    total = request.form.get("total")
