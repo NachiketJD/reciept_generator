@@ -18,3 +18,5 @@ def generate_pdf():
     subtotal = request.form.get("subtotal")
     discount = request.form.get("discount")
     total = request.form.get("total")
+
+data = [["Date", "Name", "Subscription", "Price (Rs.)"]]
